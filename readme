@@ -9,3 +9,10 @@ PS:
 (1). cal_ms_coda_q.m: computes the smoothed squared seismograms from raw data.
 (2). hann_taper.m: hanning taper code
 (3). file_reorder_inversion: to give subindex to events and stations used in inversion
+
+
+RESULTS:
+qc_*Hz.txt: contains the station-side results at * Hz.
+  Format: eveid longitude latitude depth magnitude source-terms source-coda-Q
+eve_*Hz.txt: contains the source-side results at * Hz.
+  Format: staname longitude latitude station-coda-Q station-terms
