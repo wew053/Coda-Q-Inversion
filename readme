@@ -1,0 +1,11 @@
+The following steps are the general steps to run the codes
+1. coda_section.m: derives the coda sections from the seismograms.
+2. coda_correction.m: finds the linear regression coefficient > 0.9
+3. remove_eve_sta_crit: removes the stations or event who has not enough records.
+4. inv_coda_Q_section.m: computes the coda-Q from differents coda-Q models.
+5. parameter_fraction_inversion.m: computes the importance of each part in the coda eq.
+
+PS:
+(1). cal_ms_coda_q.m: computes the smoothed squared seismograms from raw data.
+(2). hann_taper.m: hanning taper code
+(3). file_reorder_inversion: to give subindex to events and stations used in inversion
