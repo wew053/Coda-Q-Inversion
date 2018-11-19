@@ -10,6 +10,7 @@ PS:
 (2). hann_taper.m: hanning taper code
 (3). file_reorder_inversion: to give subindex to events and stations used in inversion
 (4). countmember.m: is downloaded from website, credit by Jos van der Geest
+(5). readsac.m: reads the sacfiles, credit by Xiaoning Yang
 
 
 RESULTS:
