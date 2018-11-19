@@ -1,4 +1,5 @@
 %% Test new algorithm for coda_q 
+% We first fit them applying linear regression and keep two points from the results.
 clear all;
 datadir='stp_data/';  % this sotres the sacfiles by the event id 
 gridlist='evelist_test';  %  this is the event id list
@@ -7,7 +8,6 @@ resdir='coda_step1_HZ_3Hz/'; % this is to sotre output coda infortatmion
 
 % Filter parameter
 [b,a]=butter(4,[0.04,0.08]);
-%[b,a]=butter(4,[0.16,0.32]);
 
 % Window for taper (Unit: second)
 len_taper=2.0;
