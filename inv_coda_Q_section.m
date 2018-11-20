@@ -3,8 +3,8 @@
 % and results are stored int the dirctory
 
 clear;
-filenm_syn='res_dir_HP_aplpha_1.5/freq_3/test_syn4_new';
-filenm_dat='res_dir_HP_aplpha_1.5/freq_3/test_dat4_new';
+filenm_syn='res_dir_HP_alpha_1.5/freq_3/test_syn4_new';
+filenm_dat='res_dir_HP_alpha_1.5/freq_3/test_dat4_new';
 
 sta_bad='sta_bad';  	% the bad station 
 eve_bad='eve_bad';  	% the eve band 
@@ -117,7 +117,7 @@ aa(:,4)=qc2_res(sta); aa(:,5)=sta_res(sta);
 bb=unique(aa,'rows');
 cc=zeros(length(bb),5);
 cc(:,1:5)=bb; 
-save(fullfile(pwd,'res_dir_HP_aplpha_1.5/freq_3/qc_res_both_1'),'cc','-ascii');
+save(fullfile(pwd,'res_dir_HP_alpha_1.5/freq_3/qc_res_both_1'),'cc','-ascii');
 % Write out error results
 aa=zeros(nrow,5);
 aa(:,1)=eveid; aa(:,2)=evlo; aa(:,3)=evla; aa(:,4)=evdp;
@@ -125,7 +125,7 @@ aa(:,5)=mag;
 bb=unique(aa,'rows');
 cc=zeros(evenum,7);
 cc(:,1:5)=bb; cc(:,6)=eve_res;cc(:,7)=qc1_res; 
-save(fullfile(pwd,'res_dir_HP_aplpha_1.5/freq_3/eve_res_both_1'),'cc','-ascii');
+save(fullfile(pwd,'res_dir_HP_alpha_1.5/freq_3/eve_res_both_1'),'cc','-ascii');
 
 %%  Invert the second part
 
@@ -174,7 +174,7 @@ aa(:,4)=qc2_res(sta); aa(:,5)=sta_res(sta);
 bb=unique(aa,'rows');
 cc=zeros(length(bb),5);
 cc(:,1:5)=bb; 
-save(fullfile(pwd,'res_dir_HP_aplpha_1.5/freq_3/qc_res_both_2'),'cc','-ascii');
+save(fullfile(pwd,'res_dir_HP_alpha_1.5/freq_3/qc_res_both_2'),'cc','-ascii');
 % Write out error results
 aa=zeros(nrow,5);
 aa(:,1)=eveid; aa(:,2)=evlo; aa(:,3)=evla; aa(:,4)=evdp;
@@ -182,7 +182,7 @@ aa(:,5)=mag;
 bb=unique(aa,'rows');
 cc=zeros(evenum,7);
 cc(:,1:5)=bb; cc(:,6)=eve_res;cc(:,7)=qc1_res; 
-save(fullfile(pwd,'res_dir_HP_aplpha_1.5/freq_3/eve_res_both_2'),'cc','-ascii');
+save(fullfile(pwd,'res_dir_HP_alpha_1.5/freq_3/eve_res_both_2'),'cc','-ascii');
 
 
 %%  Invert the whole part
