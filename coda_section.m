@@ -13,7 +13,7 @@ resdir='coda_step1_HZ_3Hz/'; % this is to sotre output coda infortatmion
 len_taper=2.0;
 
 % Parameter for twim window everage energy
-ms_nt=512; nt_int=10;  % unit: point. this is for the coda smoothing
+ms_nt=512; nt_int=10;  % unit: point. this is for the coda smoothing (following Aki 1989)
 
 % Parameter of time window for coda Q measurement
 s_beg=50;  % (second) lapse time of coda window
